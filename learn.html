@@ -1,0 +1,4 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Leren · Mijn Verkeersborden Test</title><link rel="stylesheet" href="../style.css"></head><body><nav><div class="navin" data-nav></div></nav><main><div class="hero" style="padding:35px 0"><div class="eyebrow">Exacte leerstof</div><h1>📖 Leren</h1><p>Gebruik deze pagina om de formuleringen uit de PDF te memoriseren. Ik heb ze niet vereenvoudigd.</p></div><div id="content"></div></main><footer class="footer" data-footer></footer><script src="../app.js"></script><script src="../signs.js"></script><script>
+const groups={};SIGNS.forEach(x=>(groups[x.section]??=[]).push(x));
+content.innerHTML=Object.entries(groups).map(([s,a])=>`<section class="section"><h2>${s}</h2><div class="grid">${a.map(x=>`<article class="card"><span class="tag">${x.key}</span><p>${x.text}</p></article>`).join('')}</div></section>`).join('');
+</script></body></html>

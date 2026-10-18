@@ -1,0 +1,4 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hoofdstukken · Mijn Verkeersborden Test</title><link rel="stylesheet" href="../style.css"></head><body><nav><div class="navin" data-nav></div></nav><main><div class="hero" style="padding:35px 0"><div class="eyebrow">Focus per onderdeel</div><h1>🚦 Hoofdstukken</h1><p>Kies één onderdeel en studeer gericht.</p></div><div class="grid" id="sections"></div></main><footer class="footer" data-footer></footer><script src="../app.js"></script><script src="../signs.js"></script><script>
+const g={};SIGNS.forEach(x=>(g[x.section]??=[]).push(x));
+sections.innerHTML=Object.entries(g).map(([s,a])=>`<a class="card" href="learn.html#${encodeURIComponent(s)}"><span class="eyebrow">${a.length} kaarten</span><h3>${s}</h3><p class="muted">${a[0].text}</p></a>`).join('');
+</script></body></html>
